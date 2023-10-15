@@ -13,9 +13,7 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'uuid' => $this->faker->uuid(),
-            'name' => $this->faker->name(),
-            'slug' => $this->faker->slug(),
+            'name'       => $this->faker->name(),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ];
