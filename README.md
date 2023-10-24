@@ -75,4 +75,6 @@ I value your input and welcome any suggestions or feedback you may have regardin
 If you encounter any issues, have ideas for improvements,
 or wish to share your experience, please don't hesitate to reach out.
 Your feedback will help me enhance and refine this project further.
+For a comprehensive tutorial on building a GraphQL API using Laravel,
+you can refer to the article on [FreeCodeCamp](https://www.freecodecamp.org/news/build-a-graphql-api-using-laravel/).
 Thank you for your collaboration!
