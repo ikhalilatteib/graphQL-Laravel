@@ -75,14 +75,24 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                // ExampleQuery::class,
+                'category'   => \App\GraphQL\Queries\Category\CategoryQuery::class,
+                'categories' => \App\GraphQL\Queries\Category\CategoriesQuery::class,
+                'post'       => \App\GraphQL\Queries\Post\PostQuery::class,
+                'posts'      => \App\GraphQL\Queries\Post\PostsQuery::class,
             ],
             'mutation' => [
-                // ExampleMutation::class,
+                'createPost'     => \App\GraphQL\Mutations\Post\CreatePostMutation::class,
+                'updatePost'     => \App\GraphQL\Mutations\Post\UpdatePostMutation::class,
+                'deletePost'     => \App\GraphQL\Mutations\Post\DeletePostMutation::class,
+                'createCategory' => \App\GraphQL\Mutations\Category\CreateCategoryMutation::class,
+                'updateCategory' => \App\GraphQL\Mutations\Category\UpdateCategoryMutation::class,
+                'deleteCategory' => \App\GraphQL\Mutations\Category\DeleteCategoryMutation::class,
             ],
             // The types only available in this schema
             'types' => [
-                // ExampleType::class,
+                'Category' => \App\GraphQL\Types\CategoryType::class,
+                'Post'     => \App\GraphQL\Types\PostType::class,
+                'User'     => \App\GraphQL\Types\UserType::class,
             ],
 
             // Laravel HTTP middleware
@@ -106,9 +116,7 @@ return [
     // ]
     //
     'types' => [
-        // ExampleType::class,
-        // ExampleRelationType::class,
-        // \Rebing\GraphQL\Support\UploadType::class,
+       //
     ],
 
     // This callable will be passed the Error object for each errors GraphQL catch.
